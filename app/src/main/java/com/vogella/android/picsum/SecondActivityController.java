@@ -39,7 +39,8 @@ public class SecondActivityController {
                 descriptif.getStringExtra("filename"),
                 descriptif.getStringExtra("id"),
                 descriptif.getStringExtra("author_url"),
-
+                 );
+                 
         TextView format = SecondActivity.findViewById(R.id.format);
         TextView width = SecondActivity.findViewById(R.id.width);
         TextView height = SecondActivity.findViewById(R.id.height);

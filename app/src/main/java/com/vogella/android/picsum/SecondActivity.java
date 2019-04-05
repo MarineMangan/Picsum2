@@ -2,6 +2,7 @@ package com.vogella.android.picsum;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.vogella.android.picsum.SecondActivityController;
 
 public class SecondActivity extends AppCompatActivity {
 
