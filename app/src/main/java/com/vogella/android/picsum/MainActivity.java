@@ -49,8 +49,4 @@ public class MainActivity extends Activity {
         mAdapter = new MyAdapter(list);
         recyclerView.setAdapter(mAdapter);
     }
-    public void launchSecondActivity(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
-        startActivity(intent);
-    }
 }
