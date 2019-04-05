@@ -26,10 +26,10 @@ public class SecondActivityController {
     }
 
     public void onCreate(){
-        this.ecranDescriptif();
+        this.Secondpage();
     }
-    
-    private void ecranDescriptif(){
+
+    private void Secondpage(){
         Intent descriptif = SecondActivity.getIntent();
 
          Picsum picsum = new Picsum(
