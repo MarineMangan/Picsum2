@@ -28,8 +28,7 @@ public class SecondActivityController {
     public void onCreate(){
         this.ecranDescriptif();
     }
-
-    @SuppressLint("SetTextI18n")
+    
     private void ecranDescriptif(){
         Intent descriptif = SecondActivity.getIntent();
 

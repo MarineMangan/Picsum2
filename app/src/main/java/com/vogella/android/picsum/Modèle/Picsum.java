@@ -10,7 +10,7 @@ public class Picsum {
     private String author_url;
     private String post_url;
 
-    public Picsum(String format, String width, String height, String filename, String id, String author, String author_url, String post_url){
+    public Picsum(String format, Integer width, Integer height, String filename, Integer id, String author, String author_url, String post_url){
         this.format = format;
         this.width = width;
         this.height = height;
