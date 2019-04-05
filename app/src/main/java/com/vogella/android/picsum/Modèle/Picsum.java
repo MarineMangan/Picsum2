@@ -10,6 +10,16 @@ public class Picsum {
     private String author_url;
     private String post_url;
 
+    public Picsum(String format, String width, String height, String filename, String id, String author, String author_url, String post_url){
+        this.format = format;
+        this.width = width;
+        this.height = height;
+        this.filename = filename;
+        this.id = id;
+        this.author = author;
+        this.author_url = author_url;
+        this.post_url = post_url;
+    }
     public String getFormat() {
         return format;
     }

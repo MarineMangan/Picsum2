@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="6dip"
+    android:id="@+id/parent_layout">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/cell_txt_picsum_filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Description"
+        android:textSize="12sp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/cell_txt_picsum_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Description"
+        android:textSize="12sp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/cell_txt_picsum_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Description"
+        android:textSize="12sp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/cell_txt_picsum_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Description"
+        android:textSize="12sp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/cell_txt_picsum_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:text="Description"
+        android:textSize="12sp"
+        android:singleLine="true"/>
+
+</RelativeLayout>

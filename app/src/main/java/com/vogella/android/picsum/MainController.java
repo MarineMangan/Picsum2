@@ -70,6 +70,12 @@ public class MainController {
     void onItemClicked(Picsum itemClicked){
         Toast.makeText(mainActivity, itemClicked.getFilename(),Toast.LENGTH_SHORT).show();
         Intent descriptif = new Intent(mainActivity, SecondActivity.class);
+        descriptif.putExtra("name",itemClicked.getFilename());
+        descriptif.putExtra("affiliation",itemClicked.getFormat());
+        descriptif.putExtra("url",itemClicked.getWidth());
+        descriptif.putExtra("symbole",itemClicked.getHeight());
+        descriptif.putExtra("symbimage",itemClicked.getId());
+        descriptif.putExtra("animal",itemClicked.getAuthor_url());
         mainActivity.startActivity(descriptif);
     }
 }
