@@ -6,6 +6,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface PicsumRestApi {
-    @GET("picsum/")
+    @GET("list")
     Call<RestPicsumResponse> getListPicsum() ;
 }
