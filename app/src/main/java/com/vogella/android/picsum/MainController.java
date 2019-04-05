@@ -40,7 +40,7 @@ public class MainController {
                 .create();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://picsum.photos/")
+                .baseUrl("https://raw.githubusercontent.com/MarineMangan/Picsum/master/")
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 

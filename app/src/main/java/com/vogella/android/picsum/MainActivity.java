@@ -3,6 +3,7 @@ package com.vogella.android.picsum;
 import com.vogella.android.picsum.Modèle.Picsum;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -46,5 +47,9 @@ public class MainActivity extends Activity {
 
         mAdapter = new MyAdapter(list);
         recyclerView.setAdapter(mAdapter);
+    }
+    public void launchSecondActivity(View view) {
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 }
