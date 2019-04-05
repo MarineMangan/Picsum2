@@ -20,7 +20,6 @@ public class MainActivity extends Activity {
     private ProgressBar loader;
 
     private MainController controller;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,9 +41,11 @@ public class MainActivity extends Activity {
 
     public void showList(List<Picsum> list){
         recyclerView.setHasFixedSize(true);
+        // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
+        // define an adapter
         mAdapter = new MyAdapter(list);
         recyclerView.setAdapter(mAdapter);
     }

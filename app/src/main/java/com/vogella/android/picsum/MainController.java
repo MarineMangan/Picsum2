@@ -5,7 +5,9 @@ import com.google.gson.GsonBuilder;
 import com.vogella.android.picsum.Modèle.Picsum;
 import com.vogella.android.picsum.Modèle.RestPicsumResponse;
 
+import android.content.Intent;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -65,7 +67,9 @@ public class MainController {
 
     }
 
-    public void onItemClicked(Picsum itemClicked){
-
+    void onItemClicked(Picsum itemClicked){
+        Toast.makeText(mainActivity, itemClicked.getFilename(),Toast.LENGTH_SHORT).show();
+        Intent descriptif = new Intent(mainActivity, SecondActivity.class);
+        mainActivity.startActivity(descriptif);
     }
 }
